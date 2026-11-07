@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+body{
+	font-family: 'Poppins', sans-serif;
+	}
+.gradient-text {
+	background: linear-gradient(90deg, #06b6d4, #9333ea);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+b{
+	color: aqua;
+	}
+ 
+.code-banner {
+	background-image: url("/public/img_1.png");
+	background-size: cover;
+	background-position: center;
+	height: 140px;
+	color: white;
+	text-align: center;
+	padding: 50px 20px;
+	
+	}
+
+.code-banner:hover {
+/*	transform: scale(1.05); /* Slight zoom on hover */
+	}
+@keyframes auto-scroll {
+	from { transform: translateX(0); }
+	to { transform: translateX(-50%); }
+	}
+.animate-auto-scroll {
+	animation: auto-scroll 30s linear infinite;
+width: 200%;
+	}
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+	}
+.animate-fadeIn {
+	animation: fadeIn 0.5s ease-out forwards;
+	}
